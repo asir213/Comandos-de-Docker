@@ -45,34 +45,38 @@ docker run -d --name u1 ubuntu tail -f /dev/null
 
 -docker system df
 
+Este comando te sirve para ver la cantidad de memoria que ocupa los contedores y demas archivos de docker
+
 8. Cánta RAM ocupan os contenedores? Crea varios para calculalo
 
 -docker stats
 
+Este comando te dice la CPU ocupada el RAM y otras estadisticas, por ello el nombre de docker stats (docker estadisticas)
+
 9. Cómo fixeches para clonar o repositorio
+
+Para clonar un repositorio de Git:
 
 -git clone [URL_do_repositorio]
 
-
-
-
 10. Cómo engades o arquivo readme2.md
 
--touch readme2.md
+-touch readme2.md (Sirve para crearlo pero debes estar dentro de la carpeta)
 
--git add readme2.md
+-git add readme2.md (esto actualiza el repositorio para subir a git)
 
 11. Os pasos a seguir para subir o arquivo que estás editando e o arquivo readme2.md
 
--git add [arquivo_que_estás_editando] readme2.md
+utilizamos el comando git commit -m "Texto para saber si se actualizó".
 
--git commit -m "Engadir readme2.md e editar [arquivo_que_estás_editando]"
-
-git push origin main
+Finalmente, utilizamos el comando git push para subir los cambios al repositorio. 
 
 12. Cómo comprobarías que existen diferencias entre o teu repositorio local e o remote.
 
-git fetch
-git diff origin/main
+-git fetch
 
-Entrega a tarefa enviando na resposta a dirección do teu repositorio coas respostas.
+Este comando actualiza la información de las ramas remotas sin fusionar los cambios en tu rama local. Después de ejecutar git fetch, puedes usar:
+
+-git diff origin/main
+
+Esto mostrará las diferencias entre tu rama actual (suponiendo que sea main) y la rama remota origin/main.
