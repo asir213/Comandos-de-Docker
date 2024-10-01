@@ -2,12 +2,23 @@
 troleo hermano
 
 1. Descargar e comprobar que unha imaxe está no teu equipo
+-docker pull ubuntu (para descargar la imagen ubuntu)
+-doker images (para ver las imagenes activas)
 
 2. Crear un contenedor sen nome, queda arrincado?, cómo obtés o nome?
+-docker run -d ubuntu (crea un contendor sin nombre)
+-docker ps (te muestra la lista de los contenedores activos)
+
+El propio docker le añade un nombre al contenedor si tu no le has añadido ninguno, y el contenedor no se crea iniciado 
+
 
 3. Crea un contenedor coo nome 'u1', cómo accedes a el?
+-docker run -d --name u1 ubuntu
+-doker exec -it u1 bash
+
 
 4. Comproba a súa ip e fai ping a google.com
+
 
 5. Crea un contenedor coo nome 'bono', pódes facer ping entre os contenedores?
 
